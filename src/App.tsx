@@ -120,7 +120,12 @@ export default function App() {
 
         if (!response.ok) {
           const errData = await response.json().catch(() => ({}));
-          throw new Error(errData.error || `HTTP error! status: ${response.status}`);
+          const errMsg =
+            errData.error ||
+            (response.status === 500
+              ? 'Server returned status 500. If deployed on Vercel, ensure GEMINI_API_KEY is set in Project Settings > Environment Variables.'
+              : `HTTP error! status: ${response.status}`);
+          throw new Error(errMsg);
         }
 
         const reader = response.body?.getReader();
@@ -201,9 +206,14 @@ export default function App() {
           signal: abortController.signal,
         });
 
-        const data = await response.json();
+        const data = await response.json().catch(() => ({}));
         if (!response.ok) {
-          throw new Error(data.error || 'Inference error');
+          const errMsg =
+            data.error ||
+            (response.status === 500
+              ? 'Server returned status 500. If deployed on Vercel, ensure GEMINI_API_KEY is set in Project Settings > Environment Variables.'
+              : `HTTP error! status: ${response.status}`);
+          throw new Error(errMsg);
         }
 
         if (data.text) {

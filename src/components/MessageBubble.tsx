@@ -186,7 +186,15 @@ export const MessageBubble: React.FC<MessageBubbleProps> = ({
                   Gemini API Notice
                 </span>
                 <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-error-container/40 text-error">
-                  Temporary High Demand
+                  {message.error.toLowerCase().includes('quota') || message.error.includes('429')
+                    ? 'Rate Limit'
+                    : message.error.toLowerCase().includes('demand') || message.error.includes('503')
+                    ? 'High Demand'
+                    : message.error.toLowerCase().includes('key') || message.error.toLowerCase().includes('vercel')
+                    ? 'Configuration Notice'
+                    : message.error.toLowerCase().includes('http') || message.error.includes('500')
+                    ? 'Server Notice'
+                    : 'System Notice'}
                 </span>
               </div>
               <p className="text-on-surface-variant text-xs leading-relaxed font-sans">{message.error}</p>
