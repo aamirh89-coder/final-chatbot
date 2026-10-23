@@ -1,0 +1,6 @@
+{
+  "name": "Gemini AI Chat Studio",
+  "description": "Professional, intelligent AI chatbot powered by Google Gemini 3.8 with real-time streaming, conversation management, and Canvas workspace.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

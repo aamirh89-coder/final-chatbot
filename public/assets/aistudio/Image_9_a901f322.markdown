@@ -1,0 +1,249 @@
+---
+name: Luminescent Intelligence
+colors:
+  surface: '#121318'
+  surface-dim: '#121318'
+  surface-bright: '#38393f'
+  surface-container-lowest: '#0d0e13'
+  surface-container-low: '#1a1b21'
+  surface-container: '#1e1f25'
+  surface-container-high: '#292a2f'
+  surface-container-highest: '#34343a'
+  on-surface: '#e3e1e9'
+  on-surface-variant: '#c7c4d7'
+  inverse-surface: '#e3e1e9'
+  inverse-on-surface: '#2f3036'
+  outline: '#908fa0'
+  outline-variant: '#464554'
+  surface-tint: '#c0c1ff'
+  primary: '#c0c1ff'
+  on-primary: '#1000a9'
+  primary-container: '#8083ff'
+  on-primary-container: '#0d0096'
+  inverse-primary: '#494bd6'
+  secondary: '#d0bcff'
+  on-secondary: '#3c0091'
+  secondary-container: '#571bc1'
+  on-secondary-container: '#c4abff'
+  tertiary: '#4cd7f6'
+  on-tertiary: '#003640'
+  tertiary-container: '#009eb9'
+  on-tertiary-container: '#002f38'
+  error: '#ffb4ab'
+  on-error: '#690005'
+  error-container: '#93000a'
+  on-error-container: '#ffdad6'
+  primary-fixed: '#e1e0ff'
+  primary-fixed-dim: '#c0c1ff'
+  on-primary-fixed: '#07006c'
+  on-primary-fixed-variant: '#2f2ebe'
+  secondary-fixed: '#e9ddff'
+  secondary-fixed-dim: '#d0bcff'
+  on-secondary-fixed: '#23005c'
+  on-secondary-fixed-variant: '#5516be'
+  tertiary-fixed: '#acedff'
+  tertiary-fixed-dim: '#4cd7f6'
+  on-tertiary-fixed: '#001f26'
+  on-tertiary-fixed-variant: '#004e5c'
+  background: '#121318'
+  on-background: '#e3e1e9'
+  surface-variant: '#34343a'
+typography:
+  display:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 56px
+    fontWeight: '700'
+    lineHeight: 64px
+    letterSpacing: -0.03em
+  display-mobile:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 36px
+    fontWeight: '700'
+    lineHeight: 44px
+    letterSpacing: -0.02em
+  headline-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 32px
+    fontWeight: '600'
+    lineHeight: 40px
+    letterSpacing: -0.02em
+  headline-lg-mobile:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 26px
+    fontWeight: '600'
+    lineHeight: 34px
+    letterSpacing: -0.015em
+  headline-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 24px
+    fontWeight: '600'
+    lineHeight: 32px
+    letterSpacing: -0.015em
+  headline-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 20px
+    fontWeight: '500'
+    lineHeight: 28px
+    letterSpacing: -0.01em
+  body-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 17px
+    fontWeight: '400'
+    lineHeight: 26px
+  body-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 15px
+    fontWeight: '400'
+    lineHeight: 24px
+  body-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 13px
+    fontWeight: '400'
+    lineHeight: 20px
+  label-code:
+    fontFamily: JetBrains Mono
+    fontSize: 13px
+    fontWeight: '400'
+    lineHeight: 20px
+  label-meta:
+    fontFamily: JetBrains Mono
+    fontSize: 11px
+    fontWeight: '500'
+    lineHeight: 16px
+    letterSpacing: 0.04em
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 1.5rem
+  gutter-mobile: 0.75rem
+  margin: 2rem
+  margin-mobile: 1rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2.5rem
+---
+
+## Brand & Style
+
+This design system embodies an ethereal, cerebral, and ultra-refined AI experience. It merges high-end precision engineering with soft, organic radiance. The emotional target is focused intelligence, calm authority, and effortless clarity—distancing the product from harsh brutalist developer shells or overly toy-like assistants.
+
+### Aesthetic Signature: Ethereal White-Glass & Deep Luminescence
+The aesthetic relies on frosted optical materials, delicate glowing field gradients (deep indigo, electric violet, and cerulean aura), and strict typographic balance.
+- **Glass Optics:** High-diffusion translucent planes layered over subtly shifting luminous fields.
+- **Subtle Radiance:** Gradients act as backlights rather than fills—appearing along borders, active focal points, generative streaming cursors, and ambient backdrops.
+- **Micro-Contrast:** Whisper-soft borders (0.5px to 1px) with targeted interior highlights to emulate precision chamfered glass edges.
+
+## Colors
+
+The palette pairs deep cosmic atmospheric dark tones with translucent prismatic layers, alongside a calibrated light mode that simulates frosted milk-glass under daylight.
+
+### Semantic Tiers & Role Strategy
+- **Primary (`#6366F1` - Electric Indigo):** Represents primary focus, generative status, active selection indicators, and energetic highlights.
+- **Secondary (`#8B5CF6` - Astral Violet):** Blends with the primary tone to produce the signature Gemini-inspired intelligence glow across generative transitions and state changes.
+- **Tertiary (`#06B6D4` - Ion Cyan):** Used sparingly for real-time streaming pulses, tool invocations, code parameters, and system readiness tokens.
+- **Neutral (`#090A0F` - Obsidian Core):** An inky, blue-shifted obsidian canvas preventing true-black lifelessness.
+
+### Dual-Theme Tokens
+- **Dark Mode (Default):**
+  - Background Base: `#090A0F`
+  - Glass Surface: `rgba(18, 20, 29, 0.65)`
+  - Elevated Glass: `rgba(28, 31, 46, 0.75)`
+  - Frosted Rim Highlight: `rgba(255, 255, 255, 0.08)`
+  - Text Primary: `#F8FAFC`
+  - Text Secondary: `#94A3B8`
+  - Text Dimmed: `#64748B`
+- **Light Mode:**
+  - Background Base: `#F8FAFC`
+  - Glass Surface: `rgba(255, 255, 255, 0.70)`
+  - Elevated Glass: `rgba(255, 255, 255, 0.88)`
+  - Frosted Rim Highlight: `rgba(255, 255, 255, 0.90)`
+  - Text Primary: `#0F172A`
+  - Text Secondary: `#475569`
+  - Text Dimmed: `#94A3B8`
+
+## Typography
+
+The type system balances organic, accessible readability with technical clarity.
+- **Headlines & Narrative Body (`Plus Jakarta Sans`):** Selected for its geometric precision softened by subtle humanist curves. At display scale, tight negative tracking produces a cohesive editorial presence, while at 15–17px body scale, generous apertures maintain legibility during prolonged reading sessions.
+- **Technical & Utility (`JetBrains Mono`):** Dedicated to code syntax, latency indicators, token count chips, metadata tags, and prompt engineering parameters. Keeps technical outputs distinct from conversational prose.
+
+## Layout & Spacing
+
+The interface uses a central-threaded architectural flow bounded by dynamic glass navigation and context panes.
+
+### Rhythm & Grid Architecture
+- **Desktop (>= 1200px):** 12-column layout. The conversation stream sits within an 8-column central track (max-width `768px` for conversational reading comfort) centered or flanked by an optional 4-column collapsible context/scratchpad sidebar. Canvas margin is fixed at `2rem`.
+- **Tablet (768px - 1199px):** Collapsible sidebar shifts to an overlay modal sheet. Conversational stream expands to occupy full readable width with `1.5rem` outer margins.
+- **Mobile (< 768px):** Single-column vertical stream. Margin tightens to `1rem` with `0.75rem` internal component spacing to maximize screen real estate for bubbles and floating input drawers.
+
+### Spacing Tokens Application
+- `space-xs` (4px): Micro-gaps between tag chips, inline status dots, code line indicators.
+- `space-sm` (8px): Icon-to-label inline gaps, card internal header stacks.
+- `space-md` (16px): Message group item separation, padding inside standard glass cards.
+- `space-lg` (24px): Inter-turn conversation spacing (user query to model response block).
+- `space-xl` (40px): Section breaks, canvas empty states, greeting hero positioning.
+
+## Elevation & Depth
+
+Depth is defined through optical density, backplate blurring, and chromatic edge luminescence rather than heavy drop shadows.
+
+### Atmospheric Tiers
+1. **Base Tier (Ground):** Deep ambient canvas (`#090A0F` dark / `#F8FAFC` light) with two floating radial gradient meshes (30% opacity, 400px blur) in indigo and violet drifting behind the main view.
+2. **Surface Tier (Panels, History Trays):**
+   - Backdrop filter: `blur(20px) saturate(180%)`
+   - Fill: `rgba(18, 20, 29, 0.65)` dark / `rgba(255, 255, 255, 0.65)` light
+   - Border: `1px solid rgba(255, 255, 255, 0.08)`
+3. **Floating Interactive Tier (Cards, Code Blocks, User Bubbles):**
+   - Backdrop filter: `blur(28px) saturate(190%)`
+   - Fill: `rgba(28, 31, 46, 0.70)`
+   - Border: Top edge `1px solid rgba(255, 255, 255, 0.16)`, sides/bottom `1px solid rgba(255, 255, 255, 0.06)`
+   - Shadow: Ambient diffuse drop `0 16px 36px -10px rgba(0, 0, 0, 0.35)`
+4. **Spotlight Tier (Active Prompts, Focused Inputs, Active Generative Streams):**
+   - Surrounds element in an animated linear gradient rim (`indigo-500` through `violet-500` to `cyan-400`).
+   - Outer glow: `0 0 24px -4px rgba(99, 102, 241, 0.25)`.
+
+## Shapes
+
+The design uses rounded geometry (`roundedness: 2`) to balance organic warmth with ergonomic containment.
+- **Base Components (Inputs, Buttons, Cards):** Standard radius of `0.5rem` (8px).
+- **Surface Panels & Glass Containers:** Large radius of `1rem` (16px) using `rounded-lg`.
+- **Chat Bubbles & Floating Action Units:** Extra-large radius of `1.5rem` (24px) via `rounded-xl`. User message bubbles feature an asymmetric corner (e.g., bottom-right reduced to 4px) to subtly anchor speech origin.
+- **Control Pills & Status Chips:** Fully pill-shaped (`9999px`) for quick visual parsing.
+
+## Components
+
+### 1. Conversation Bubbles
+- **User Bubble:** Right-aligned, semi-translucent elevated surface (`rgba(99, 102, 241, 0.15)` dark mode, `rgba(99, 102, 241, 0.08)` light mode) with a distinct top-right highlight border. Padding: `12px 18px`.
+- **AI Response Bubble:** Left-aligned, non-enclosed or enclosed within a borderless glass tray. Begins with a tiny gradient sparkle mark (Gemini-inspired spark glyph). Employs typographic hierarchy directly on the canvas without dense background boxing to retain an airy, fluid feel.
+
+### 2. Prompt Input Console
+- Floats pinned at screen bottom above conversation history.
+- Built as an ultra-thick frosted glass pill container (`blur(32px)`, `rgba(20, 22, 33, 0.8)`).
+- Interior contains auto-expanding multi-line textarea, quick action pills (+ attachment, web search toggle), and a circular gradient action button that illuminates when input text is present.
+
+### 3. Sleek Code Syntax Blocks
+- Container: Matte obsidian glass (`#0D0F17`) with a 1px border (`rgba(255, 255, 255, 0.08)`).
+- Header Bar: Translucent ribbon containing the language label in `label-meta` (`JetBrains Mono`), followed by a "Copy Code" ghost button with smooth checkmark transition.
+- Typography & Theme: `label-code` styling with customized prism syntax highlighting: indigo keywords, cyan constants, soft emerald strings, and slate comments.
+- Rounded corners: `rounded-lg` (16px) with zero scrollbar friction.
+
+### 4. Glassmorphism Suggestion & Prompt Cards
+- Horizontal quick-start suggestion grid for empty states.
+- Surface: Frosted glass tile with an internal gradient overlay that intensifies on cursor hover.
+- Interaction: On hover, applies an animated border highlight with a subtle -2px Y-axis lift and `0 8px 24px -4px rgba(99, 102, 241, 0.2)` soft glow.
+
+### 5. Buttons & Pills
+- **Primary Action Button:** Gradient fill (`linear-gradient(135deg, #6366F1, #8B5CF6)`), crisp white text, subtle inner top shadow for 3D glass tactile depth.
+- **Secondary Ghost Button:** Translucent glass surface, border `1px solid rgba(255, 255, 255, 0.12)`, hover glow.
+- **Pills / Suggestion Chips:** Monospaced or compact sans-serif text housed in pill geometry (`9999px`), padding `6px 14px`, dynamic border lighting on hover.
+
+### 6. Streaming Generation Cursor & Indicators
+- Generative state is conveyed using a vertical pulsing spectral gradient bar (`indigo` to `cyan`) following stream output.
+- Thought process/reasoning accordions use a frosted collapsed drawer with animated shimmering skeleton lines while inference is underway.

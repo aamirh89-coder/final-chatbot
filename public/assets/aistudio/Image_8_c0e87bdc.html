@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#121318;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-bright": "#38393f", "error": "#ffb4ab", "tertiary": "#4cd7f6", "inverse-surface": "#e3e1e9", "on-tertiary": "#003640", "outline-variant": "#464554", "on-primary": "#1000a9", "primary-container": "#8083ff", "tertiary-container": "#009eb9", "surface-container-high": "#292a2f", "primary-fixed-dim": "#c0c1ff", "on-secondary-fixed": "#23005c", "on-surface": "#e3e1e9", "surface-variant": "#34343a", "on-surface-variant": "#c7c4d7", "primary": "#c0c1ff", "on-tertiary-fixed": "#001f26", "tertiary-fixed": "#acedff", "surface-container": "#1e1f25", "on-secondary-container": "#c4abff", "on-tertiary-fixed-variant": "#004e5c", "on-error-container": "#ffdad6", "inverse-primary": "#494bd6", "surface": "#121318", "outline": "#908fa0", "on-tertiary-container": "#002f38", "secondary": "#d0bcff", "background": "#121318", "tertiary-fixed-dim": "#4cd7f6", "on-primary-container": "#0d0096", "on-error": "#690005", "secondary-fixed": "#e9ddff", "inverse-on-surface": "#2f3036", "surface-container-lowest": "#0d0e13", "surface-tint": "#c0c1ff", "surface-container-low": "#1a1b21", "surface-container-highest": "#34343a", "secondary-container": "#571bc1", "on-primary-fixed-variant": "#2f2ebe", "on-primary-fixed": "#07006c", "on-background": "#e3e1e9", "on-secondary-fixed-variant": "#5516be", "primary-fixed": "#e1e0ff", "surface-dim": "#121318", "on-secondary": "#3c0091", "error-container": "#93000a", "secondary-fixed-dim": "#d0bcff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "space-md": "1rem", "gutter-mobile": "0.75rem", "space-lg": "1.5rem", "margin": "2rem", "margin-mobile": "1rem" }, "fontFamily": { "label-code": ["JetBrains Mono"], "body-md": ["Plus Jakarta Sans"], "display": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-meta": ["JetBrains Mono"], "display-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"] }, "fontSize": { "label-code": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "display": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-meta": ["11px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" }], "display-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "body-lg": ["17px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md min-h-screen relative flex flex-col selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><button aria-label="Go back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><img alt="Gemini AI Sparkle Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UbgtotmZmwkhbYng_i9mEVepQ50Wn-fxKPyY1nFPAkO5Dy30LOdsXGygQcxGTxd5g0z7cGP1tjyZJHnABXNhBkniLF_OWpJ5ZxZchjRi-vZ7bEdLYXkWz77dR6EER0T0W9G_uE9fjImPfHz3jMhj6q81IxnoaYbAaqOg9TOWUduOj08tQALLhL4eiiGR01gNOf5ZRZ3iV9H1ABeLlQwlERxOH3bLT3DpNBks1XuGd4Xa0HUGe--ClrGy4"/><h1 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Settings</h1></div><div class="flex items-center gap-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full px-margin-mobile pb-space-xl space-y-space-lg text-on-surface">
+<!-- Ambient Backdrop Glows (Atmospheric Tiers) -->
+<div class="relative w-full">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 w-72 h-36 bg-gradient-to-r from-primary-container/20 via-secondary-container/25 to-tertiary-container/15 blur-3xl pointer-events-none rounded-full"></div>
+</div>
+<!-- Hero Status / Quick Pulse -->
+<section class="relative bg-surface-container-low rounded-xl p-space-md shadow-md overflow-hidden">
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-primary text-[22px]">tune</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-sm text-headline-sm font-semibold truncate">Model Studio</h2>
+<span class="inline-flex items-center px-space-xs py-0.5 rounded-full bg-primary-container/30 text-primary font-label-meta text-label-meta">LIVE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Runtime hyperparameters &amp; client memory state</p>
+</div>
+</div>
+<div class="shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-surface-container">
+<span class="material-symbols-outlined text-tertiary text-[18px]">auto_awesome</span>
+</div>
+</div>
+</section>
+<!-- Section 1: Gemini API & Model Configuration -->
+<section class="space-y-space-md">
+<div class="flex items-center gap-space-xs px-1">
+<span class="material-symbols-outlined text-primary text-[20px]">psychology</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold tracking-tight">API &amp; Model Configuration</h3>
+</div>
+<!-- Active Model Selector Card -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<label class="font-body-md text-body-md font-medium text-on-surface flex items-center gap-space-xs" for="model-selector">
+<span>Target Architecture</span>
+</label>
+<span class="font-label-meta text-label-meta text-tertiary bg-tertiary/10 px-2 py-0.5 rounded-full font-medium">Multimodal v1.5</span>
+</div>
+<div class="grid grid-cols-1 gap-space-sm" id="model-selector-group">
+<!-- Model Card 1: Flash (Active) -->
+<label class="model-option relative flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container-high cursor-pointer transition-all duration-200 shadow-sm" data-model="flash">
+<input checked="" class="mt-1 accent-primary h-4 w-4 shrink-0" name="model" type="radio" value="flash"/>
+<div class="flex-1 min-w-0 space-y-1">
+<div class="flex items-center justify-between gap-space-xs flex-wrap">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Gemini 1.5 Flash</span>
+<span class="font-label-meta text-label-meta px-2 py-0.5 rounded-full bg-primary/20 text-primary font-medium">Fast &amp; Efficient</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Recommended for general queries, rapid prototyping, and ultra-low latency streams.</p>
+<div class="flex items-center gap-space-xs pt-1 text-on-surface-variant font-label-meta text-label-meta">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span>Free Tier Quota Included</span>
+</div>
+</div>
+</label>
+<!-- Model Card 2: Pro -->
+<label class="model-option relative flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container-low cursor-pointer transition-all duration-200" data-model="pro">
+<input class="mt-1 accent-primary h-4 w-4 shrink-0" name="model" type="radio" value="pro"/>
+<div class="flex-1 min-w-0 space-y-1">
+<div class="flex items-center justify-between gap-space-xs flex-wrap">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Gemini 1.5 Pro</span>
+<span class="font-label-meta text-label-meta px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-medium">Complex Reasoning</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Deep contextual synthesis, long-context code refactoring, and multi-turn analytical reasoning.</p>
+<div class="flex items-center gap-space-xs pt-1 text-on-surface-variant font-label-meta text-label-meta">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>1M+ Token Window</span>
+</div>
+</div>
+</label>
+</div>
+<!-- API Key Protected Status Card -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-inner">
+<div class="flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-tertiary text-[22px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<div class="flex-1 min-w-0 space-y-1">
+<div class="flex items-center justify-between gap-space-xs flex-wrap">
+<span class="font-label-code text-label-code text-on-surface font-medium truncate">GEMINI_API_KEY</span>
+<span class="font-label-meta text-label-meta bg-primary-container/20 text-primary px-2 py-0.5 rounded-full">Server-Side Protected</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">✓ Loaded securely via runtime host (<span class="font-label-code text-label-code text-primary">.env.local</span>). Secrets are never exposed to browser memory.</p>
+</div>
+</div>
+</div>
+<!-- Temperature Slider -->
+<div class="space-y-space-sm pt-space-xs">
+<div class="flex items-center justify-between">
+<div class="space-y-0.5">
+<label class="font-body-md text-body-md font-medium text-on-surface flex items-center gap-space-xs" for="temp-slider">
+<span class="material-symbols-outlined text-[18px] text-tertiary">thermostat</span>
+<span>Temperature</span>
+</label>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Balanced creativity &amp; precision</p>
+</div>
+<span class="font-label-code text-label-code font-medium bg-surface-container-high px-2.5 py-1 rounded-lg text-primary shadow-inner" id="temp-val">0.70</span>
+</div>
+<div class="relative flex items-center py-2">
+<input aria-label="Model Temperature" class="w-full h-2 bg-surface-container-high rounded-full appearance-none cursor-pointer accent-primary focus:outline-none" id="temp-slider" max="1.0" min="0.0" step="0.05" type="range" value="0.7"/>
+</div>
+<div class="flex justify-between font-label-meta text-label-meta text-on-surface-variant px-0.5">
+<span>0.0 (Deterministic)</span>
+<span>1.0 (Inventive)</span>
+</div>
+</div>
+<!-- Max Output Tokens Slider -->
+<div class="space-y-space-sm pt-space-xs">
+<div class="flex items-center justify-between">
+<div class="space-y-0.5">
+<label class="font-body-md text-body-md font-medium text-on-surface flex items-center gap-space-xs" for="tokens-slider">
+<span class="material-symbols-outlined text-[18px] text-secondary">token</span>
+<span>Max Output Tokens</span>
+</label>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Upper constraint per completion</p>
+</div>
+<span class="font-label-code text-label-code font-medium bg-surface-container-high px-2.5 py-1 rounded-lg text-secondary shadow-inner" id="tokens-val">2048</span>
+</div>
+<div class="relative flex items-center py-2">
+<input aria-label="Max Output Tokens" class="w-full h-2 bg-surface-container-high rounded-full appearance-none cursor-pointer accent-secondary focus:outline-none" id="tokens-slider" max="8192" min="256" step="256" type="range" value="2048"/>
+</div>
+<div class="flex justify-between font-label-meta text-label-meta text-on-surface-variant px-0.5">
+<span>256</span>
+<span>4096</span>
+<span>8192</span>
+</div>
+</div>
+<!-- System Instructions Box -->
+<div class="space-y-space-xs pt-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-body-md text-body-md font-medium text-on-surface flex items-center gap-space-xs" for="sys-prompt">
+<span class="material-symbols-outlined text-[18px] text-primary">terminal</span>
+<span>System Persona &amp; Instructions</span>
+</label>
+<button class="font-label-meta text-label-meta text-primary hover:text-on-surface transition-colors flex items-center gap-1" id="reset-prompt-btn" type="button">
+<span class="material-symbols-outlined text-[14px]">restart_alt</span>
+<span>Reset</span>
+</button>
+</div>
+<div class="relative rounded-xl bg-surface-container-lowest p-space-sm shadow-inner focus-within:bg-surface-container-high transition-colors">
+<textarea class="w-full bg-transparent font-label-code text-label-code text-on-surface resize-none focus:outline-none placeholder:text-on-surface-variant leading-relaxed" id="sys-prompt" placeholder="Define custom behavior instructions..." rows="3">You are an expert full-stack developer assistant specializing in Next.js, React, TypeScript, and modern UI engineering.</textarea>
+<div class="flex justify-between items-center pt-2 text-on-surface-variant font-label-meta text-label-meta">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-tertiary">code</span>
+              Appended to model prologue
+            </span>
+<span id="char-counter">117 chars</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Visual Delight & AI Sandbox Graphic -->
+<section class="relative rounded-xl bg-surface-container overflow-hidden shadow-sm p-space-md">
+<div class="flex items-center justify-between gap-space-md">
+<div class="space-y-1 min-w-0">
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-primary">Inference Topology</span>
+<h4 class="font-headline-sm text-headline-sm font-semibold truncate">Distributed Edge Mesh</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Direct stream pipelines through Cloudflare Workers and Google Vertex AI edge gateways.</p>
+</div>
+<div class="w-20 h-20 shrink-0 relative rounded-lg overflow-hidden shadow-inner bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="A luminous 3D abstract visualization of glowing ethereal fiber-optic crystalline nodes pulsating in deep indigo, violet, and electric cyan light against a dark obsidian void with subtle ambient reflections." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLwLwc9w7h6MjEU9dMVhkzFO61qvZky5YAiTfQSs9IzL1DHVrXE0bv_xO0yYjbobp2MkEI7igyGPi1pUylITcvaHbWLCq0baglzE_WJlMwA3sUqxoICQTyaz_ZnjRaVwfC4PSkI6PP50uWRyk4NFq-S_KgHmenUT72Pezn6l48gmTAi1yDzJFgfzM2KHMNL8qq08pHwt7IR_CzXyIUcUgud1pq7BGVYDVpgIsEp4tDXaQHOiYGO4LG"/>
+</div>
+</div>
+</section>
+<!-- Section 2: Local Storage & Data Management -->
+<section class="space-y-space-md">
+<div class="flex items-center gap-space-xs px-1">
+<span class="material-symbols-outlined text-secondary text-[20px]">database</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold tracking-tight">Local Storage &amp; Data</h3>
+</div>
+<div class="bg-surface-container rounded-xl p-space-md shadow-sm space-y-space-md">
+<!-- Health Meter Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-body-md text-body-md font-medium text-on-surface">Client Storage Quota</span>
+<span class="font-label-code text-label-code text-tertiary font-semibold">348 KB / 5 MB</span>
+</div>
+<!-- Custom Inline Progress Visualization -->
+<div class="w-full h-2.5 bg-surface-container-highest rounded-full overflow-hidden p-0.5 flex">
+<div class="h-full bg-gradient-to-r from-primary via-secondary to-tertiary rounded-full transition-all duration-500" style="width: 7%;"></div>
+</div>
+<div class="grid grid-cols-3 gap-space-xs pt-space-xs text-center">
+<div class="bg-surface-container p-2 rounded-lg">
+<span class="block font-headline-sm text-headline-sm font-bold text-on-surface">18</span>
+<span class="block font-label-meta text-label-meta text-on-surface-variant truncate">Sessions</span>
+</div>
+<div class="bg-surface-container p-2 rounded-lg">
+<span class="block font-headline-sm text-headline-sm font-bold text-on-surface">142</span>
+<span class="block font-label-meta text-label-meta text-on-surface-variant truncate">Messages</span>
+</div>
+<div class="bg-surface-container p-2 rounded-lg">
+<span class="block font-headline-sm text-headline-sm font-bold text-tertiary">348</span>
+<span class="block font-label-meta text-label-meta text-on-surface-variant truncate">Kilobytes</span>
+</div>
+</div>
+</div>
+<!-- Quick Action Buttons -->
+<div class="space-y-space-sm">
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Export Button -->
+<button class="flex items-center justify-center gap-space-xs py-2.5 px-space-sm rounded-xl bg-surface-container-high hover:bg-surface-bright active:scale-[0.98] transition-all text-on-surface shadow-sm" id="export-btn" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">download</span>
+<span class="font-body-sm text-body-sm font-medium">Export JSON</span>
+</button>
+<!-- Import Button -->
+<button class="flex items-center justify-center gap-space-xs py-2.5 px-space-sm rounded-xl bg-surface-container-high hover:bg-surface-bright active:scale-[0.98] transition-all text-on-surface shadow-sm" id="import-btn" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary">upload_file</span>
+<span class="font-body-sm text-body-sm font-medium">Import Backup</span>
+</button>
+</div>
+<!-- Destructive Action -->
+<button class="w-full flex items-center justify-center gap-space-xs py-2.5 px-space-sm rounded-xl bg-error-container/40 hover:bg-error-container/60 active:scale-[0.98] transition-all text-error shadow-sm" id="clear-history-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">delete_sweep</span>
+<span class="font-body-sm text-body-sm font-medium">Clear All Chat History</span>
+</button>
+</div>
+<!-- Notification Toast Spot (Hidden by default) -->
+<div class="hidden items-center justify-between p- space-sm px-space-md rounded-lg bg-surface-container-highest text-primary font-body-sm text-body-sm shadow-md" id="toast-banner">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span id="toast-msg">Chat database exported successfully.</span>
+</span>
+<button class="text-on-surface-variant hover:text-on-surface" id="dismiss-toast" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Section 3: Appearance & Interaction -->
+<section class="space-y-space-md">
+<div class="flex items-center gap-space-xs px-1">
+<span class="material-symbols-outlined text-tertiary text-[20px]">palette</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold tracking-tight">Appearance &amp; Interaction</h3>
+</div>
+<div class="bg-surface-container rounded-xl p-space-md shadow-sm space-y-space-md">
+<!-- Theme Segmented Control -->
+<div class="space-y-space-xs">
+<label class="font-body-md text-body-md font-medium text-on-surface">Interface Theme</label>
+<div class="grid grid-cols-3 gap-1 p-1 bg-surface-container-low rounded-xl">
+<button class="theme-tab flex items-center justify-center gap-1.5 py-2 rounded-lg bg-surface-container-high text-on-surface font-body-sm text-body-sm font-medium shadow-sm" data-theme="dark" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">dark_mode</span>
+<span>Dark</span>
+</button>
+<button class="theme-tab flex items-center justify-center gap-1.5 py-2 rounded-lg text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm font-medium transition-colors" data-theme="light" type="button">
+<span class="material-symbols-outlined text-[16px]">light_mode</span>
+<span>Light</span>
+</button>
+<button class="theme-tab flex items-center justify-center gap-1.5 py-2 rounded-lg text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm font-medium transition-colors" data-theme="system" type="button">
+<span class="material-symbols-outlined text-[16px]">desktop_windows</span>
+<span>System</span>
+</button>
+</div>
+</div>
+<!-- Keyboard Shortcuts Legend -->
+<div class="space-y-space-sm pt-space-xs">
+<span class="font-body-md text-body-md font-medium text-on-surface block">Interaction Shortcuts</span>
+<div class="space-y-2">
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Send Message</span>
+<div class="flex items-center gap-1">
+<kbd class="font-label-code text-label-code px-2 py-0.5 rounded bg-surface-container-high text-primary shadow-xs">Enter</kbd>
+</div>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Insert Multiline Linebreak</span>
+<div class="flex items-center gap-1">
+<kbd class="font-label-code text-label-code px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant shadow-xs">Shift</kbd>
+<span class="text-on-surface-variant text-xs">+</span>
+<kbd class="font-label-code text-label-code px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant shadow-xs">Enter</kbd>
+</div>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Quick Universal Search</span>
+<div class="flex items-center gap-1">
+<kbd class="font-label-code text-label-code px-1.5 py-0.5 rounded bg-surface-container-high text-secondary shadow-xs">⌘ Cmd</kbd>
+<span class="text-on-surface-variant text-xs">+</span>
+<kbd class="font-label-code text-label-code px-2 py-0.5 rounded bg-surface-container-high text-secondary shadow-xs">K</kbd>
+</div>
+</div>
+</div>
+</div>
+<!-- Version & Pipeline Specs -->
+<div class="pt-space-xs">
+<div class="p-space-sm rounded-xl bg-surface-container-lowest flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-2 h-2 rounded-full bg-tertiary shrink-0 animate-pulse"></div>
+<p class="font-label-code text-label-code text-on-surface-variant truncate">
+              Next.js 14 App Router • Google Generative AI SDK v0.21
+            </p>
+</div>
+<span class="font-label-meta text-label-meta text-primary bg-primary-container/20 px-2 py-0.5 rounded shrink-0">STABLE</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Script for Micro-Interactions -->
+<script>
+    (function initSettingsInteractivity() {
+      // Temperature Slider sync
+      const tempSlider = document.getElementById('temp-slider');
+      const tempVal = document.getElementById('temp-val');
+      if (tempSlider && tempVal) {
+        tempSlider.addEventListener('input', (e) => {
+          tempVal.textContent = parseFloat(e.target.value).toFixed(2);
+        });
+      }
+
+      // Tokens Slider sync
+      const tokensSlider = document.getElementById('tokens-slider');
+      const tokensVal = document.getElementById('tokens-val');
+      if (tokensSlider && tokensVal) {
+        tokensSlider.addEventListener('input', (e) => {
+          tokensVal.textContent = e.target.value;
+        });
+      }
+
+      // System Prompt Character counter
+      const sysPrompt = document.getElementById('sys-prompt');
+      const charCounter = document.getElementById('char-counter');
+      const resetPromptBtn = document.getElementById('reset-prompt-btn');
+      const defaultPrompt = "You are an expert full-stack developer assistant specializing in Next.js, React, TypeScript, and modern UI engineering.";
+
+      if (sysPrompt && charCounter) {
+        sysPrompt.addEventListener('input', () => {
+          charCounter.textContent = `${sysPrompt.value.length} chars`;
+        });
+      }
+
+      if (resetPromptBtn && sysPrompt && charCounter) {
+        resetPromptBtn.addEventListener('click', () => {
+          sysPrompt.value = defaultPrompt;
+          charCounter.textContent = `${defaultPrompt.length} chars`;
+          showToast('Persona instructions reset to default.');
+        });
+      }
+
+      // Model Switcher styling
+      const modelRadios = document.querySelectorAll('input[name="model"]');
+      const modelCards = document.querySelectorAll('.model-option');
+      modelRadios.forEach((radio) => {
+        radio.addEventListener('change', () => {
+          modelCards.forEach((c) => {
+            c.classList.remove('bg-surface-container-high');
+            c.classList.add('bg-surface-container-low');
+          });
+          const parent = radio.closest('.model-option');
+          if (parent) {
+            parent.classList.remove('bg-surface-container-low');
+            parent.classList.add('bg-surface-container-high');
+          }
+          showToast(`Active model changed to ${radio.value === 'flash' ? 'Gemini 1.5 Flash' : 'Gemini 1.5 Pro'}`);
+        });
+      });
+
+      // Simple Toast Dispatcher
+      const toast = document.getElementById('toast-banner');
+      const toastMsg = document.getElementById('toast-msg');
+      const dismissToast = document.getElementById('dismiss-toast');
+      let toastTimer;
+
+      function showToast(text) {
+        if (!toast || !toastMsg) return;
+        toastMsg.textContent = text;
+        toast.classList.remove('hidden');
+        toast.classList.add('flex');
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => {
+          toast.classList.add('hidden');
+          toast.classList.remove('flex');
+        }, 3200);
+      }
+
+      if (dismissToast && toast) {
+        dismissToast.addEventListener('click', () => {
+          toast.classList.add('hidden');
+          toast.classList.remove('flex');
+        });
+      }
+
+      // Export / Import / Clear Simulation
+      const exportBtn = document.getElementById('export-btn');
+      const importBtn = document.getElementById('import-btn');
+      const clearBtn = document.getElementById('clear-history-btn');
+
+      if (exportBtn) {
+        exportBtn.addEventListener('click', () => {
+          showToast('Downloaded gemini-conversations-backup.json (348 KB)');
+        });
+      }
+
+      if (importBtn) {
+        importBtn.addEventListener('click', () => {
+          showToast('Storage import schema verified successfully.');
+        });
+      }
+
+      if (clearBtn) {
+        clearBtn.addEventListener('click', () => {
+          if (confirm('Are you sure you want to purge local chat history? This cannot be undone.')) {
+            showToast('All 18 conversation logs purged from LocalStorage.');
+          }
+        });
+      }
+
+      // Theme toggle simulated switcher
+      const themeTabs = document.querySelectorAll('.theme-tab');
+      themeTabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+          themeTabs.forEach((t) => {
+            t.classList.remove('bg-surface-container-high', 'text-on-surface', 'shadow-sm');
+            t.classList.add('text-on-surface-variant');
+          });
+          tab.classList.add('bg-surface-container-high', 'text-on-surface', 'shadow-sm');
+          tab.classList.remove('text-on-surface-variant');
+          showToast(`Theme updated to ${tab.getAttribute('data-theme')} mode.`);
+        });
+      });
+    })();
+  </script>
+</div></main></body></html>

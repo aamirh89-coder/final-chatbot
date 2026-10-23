@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#121318;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-bright": "#38393f", "error": "#ffb4ab", "tertiary": "#4cd7f6", "inverse-surface": "#e3e1e9", "on-tertiary": "#003640", "outline-variant": "#464554", "on-primary": "#1000a9", "primary-container": "#8083ff", "tertiary-container": "#009eb9", "surface-container-high": "#292a2f", "primary-fixed-dim": "#c0c1ff", "on-secondary-fixed": "#23005c", "on-surface": "#e3e1e9", "surface-variant": "#34343a", "on-surface-variant": "#c7c4d7", "primary": "#c0c1ff", "on-tertiary-fixed": "#001f26", "tertiary-fixed": "#acedff", "surface-container": "#1e1f25", "on-secondary-container": "#c4abff", "on-tertiary-fixed-variant": "#004e5c", "on-error-container": "#ffdad6", "inverse-primary": "#494bd6", "surface": "#121318", "outline": "#908fa0", "on-tertiary-container": "#002f38", "secondary": "#d0bcff", "background": "#121318", "tertiary-fixed-dim": "#4cd7f6", "on-primary-container": "#0d0096", "on-error": "#690005", "secondary-fixed": "#e9ddff", "inverse-on-surface": "#2f3036", "surface-container-lowest": "#0d0e13", "surface-tint": "#c0c1ff", "surface-container-low": "#1a1b21", "surface-container-highest": "#34343a", "secondary-container": "#571bc1", "on-primary-fixed-variant": "#2f2ebe", "on-primary-fixed": "#07006c", "on-background": "#e3e1e9", "on-secondary-fixed-variant": "#5516be", "primary-fixed": "#e1e0ff", "surface-dim": "#121318", "on-secondary": "#3c0091", "error-container": "#93000a", "secondary-fixed-dim": "#d0bcff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "space-md": "1rem", "gutter-mobile": "0.75rem", "space-lg": "1.5rem", "margin": "2rem", "margin-mobile": "1rem" }, "fontFamily": { "label-code": ["JetBrains Mono"], "body-md": ["Plus Jakarta Sans"], "display": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-meta": ["JetBrains Mono"], "display-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"] }, "fontSize": { "label-code": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "display": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-meta": ["11px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" }], "display-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "body-lg": ["17px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md min-h-screen relative flex flex-col selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><button aria-label="Toggle chat drawer" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[22px]">menu</span></button><div class="flex items-center gap-space-sm"><img alt="Gemini AI Sparkle Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UbgtotmZmwkhbYng_i9mEVepQ50Wn-fxKPyY1nFPAkO5Dy30LOdsXGygQcxGTxd5g0z7cGP1tjyZJHnABXNhBkniLF_OWpJ5ZxZchjRi-vZ7bEdLYXkWz77dR6EER0T0W9G_uE9fjImPfHz3jMhj6q81IxnoaYbAaqOg9TOWUduOj08tQALLhL4eiiGR01gNOf5ZRZ3iV9H1ABeLlQwlERxOH3bLT3DpNBks1XuGd4Xa0HUGe--ClrGy4"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-none font-bold">Gemini AI</span><span class="hidden text-[10px] text-on-surface-variant">Chat Hub</span></div></div></div><div class="flex items-center gap-space-xs"><button aria-label="Model Selector" class="hidden sm:flex items-center gap-1.5 py-1 px-2.5 rounded-full bg-surface-container-high/70 hover:bg-surface-container-high text-on-surface transition-all"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-meta text-label-meta text-tertiary-fixed">Gemini 1.5 Flash</span><span class="material-symbols-outlined text-[16px] text-outline">keyboard_arrow_down</span></button><a aria-label="New Chat" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="chat-hub" href="#"><span class="material-symbols-outlined text-[22px]">add</span></a><a aria-label="Settings" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[22px]">settings</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-32 bg-surface"><div class="flex flex-col w-full relative px-margin-mobile pb-space-lg select-none">
+<!-- Ambient Atmospheric Aura Layer -->
+<div class="absolute -top-12 left-1/2 -translate-x-1/2 w-80 h-72 bg-gradient-to-tr from-secondary-container/40 via-primary-container/20 to-tertiary-container/30 blur-3xl rounded-full pointer-events-none -z-10"></div>
+<div class="absolute top-48 right-0 w-48 h-48 bg-tertiary-container/15 blur-2xl rounded-full pointer-events-none -z-10"></div>
+<!-- Hero & Welcome Section -->
+<div class="flex flex-col items-center text-center mt-space-sm mb-space-lg">
+<!-- Ethereal Sparkle Emblem with Orbit Rays -->
+<div class="relative w-24 h-24 mb-space-md flex items-center justify-center">
+<div class="absolute inset-0 rounded-full bg-gradient-to-tr from-secondary-container via-primary-container to-tertiary opacity-30 blur-xl animate-pulse"></div>
+<div class="relative w-20 h-20 rounded-full bg-surface-container-high/60 backdrop-blur-md flex items-center justify-center shadow-inner">
+<svg class="w-12 h-12" fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<lineargradient id="geminiSparkleGrad" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#acedff"></stop>
+<stop offset="50%" stop-color="#c0c1ff"></stop>
+<stop offset="100%" stop-color="#d0bcff"></stop>
+</lineargradient>
+</defs>
+<path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z" fill="url(#geminiSparkleGrad)"></path>
+</svg>
+</div>
+<!-- Micro Orbit Accent Dots -->
+<span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-tertiary animate-ping"></span>
+<span class="absolute bottom-2 left-3 w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<!-- Active Model Ribbon Badge -->
+<div class="inline-flex items-center gap-space-xs px-3.5 py-1.5 rounded-full bg-surface-container-low/90 backdrop-blur-xl shadow-sm mb-space-md group">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary-fixed opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary-fixed"></span>
+</span>
+<span class="font-label-meta text-label-meta text-tertiary-fixed font-semibold tracking-wide">Gemini 1.5 Flash</span>
+<span class="font-label-meta text-label-meta text-outline-variant">•</span>
+<span class="font-label-meta text-label-meta text-on-surface-variant">1M Context Window (Fast &amp; Free Tier)</span>
+</div>
+<!-- Personalized Greetings -->
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold tracking-tight text-on-surface mb-space-xs">
+      Hello, Alex
+    </h1>
+<p class="font-body-md text-body-md max-w-xs text-transparent bg-clip-text bg-gradient-to-r from-on-surface via-primary-fixed-dim to-secondary-fixed">
+      What would you like to explore with Gemini today?
+    </p>
+</div>
+<!-- Quick Spark Suggestion Grid -->
+<div class="flex flex-col gap-space-sm w-full mb-space-xl">
+<div class="flex items-center justify-between px-space-xs">
+<span class="font-label-meta text-label-meta text-outline uppercase tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-primary">auto_awesome</span> Suggested Prompts
+      </span>
+<span class="font-label-meta text-label-meta text-outline-variant">Tap to launch</span>
+</div>
+<!-- Card 1 -->
+<button class="group relative w-full text-left p-4 rounded-xl bg-surface-container-low/80 hover:bg-surface-container/90 active:scale-[0.98] transition-all duration-200 shadow-sm backdrop-blur-xl overflow-hidden cursor-pointer" type="button">
+<div class="absolute inset-0 bg-gradient-to-r from-tertiary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+<div class="flex items-start gap-3.5 relative z-10">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high/80 text-tertiary flex items-center justify-center shrink-0 shadow-inner group-hover:bg-tertiary-container group-hover:text-on-tertiary transition-colors">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between mb-0.5">
+<span class="font-label-meta text-label-meta text-tertiary-fixed font-medium">Architecture</span>
+<span class="material-symbols-outlined text-[16px] text-outline group-hover:text-tertiary transition-transform group-hover:translate-x-0.5">arrow_forward</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-medium line-clamp-2">
+            Explain Next.js 14 App Router vs Pages Router with server components
+          </p>
+</div>
+</div>
+</button>
+<!-- Card 2 -->
+<button class="group relative w-full text-left p-4 rounded-xl bg-surface-container-low/80 hover:bg-surface-container/90 active:scale-[0.98] transition-all duration-200 shadow-sm backdrop-blur-xl overflow-hidden cursor-pointer" type="button">
+<div class="absolute inset-0 bg-gradient-to-r from-primary-container/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+<div class="flex items-start gap-3.5 relative z-10">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high/80 text-primary-fixed-dim flex items-center justify-center shrink-0 shadow-inner group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">code_blocks</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between mb-0.5">
+<span class="font-label-meta text-label-meta text-primary-fixed-dim font-medium">React • TS</span>
+<span class="material-symbols-outlined text-[16px] text-outline group-hover:text-primary transition-transform group-hover:translate-x-0.5">arrow_forward</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-medium line-clamp-2">
+            Write a TypeScript hook for Local Storage persistence with SSR safety
+          </p>
+</div>
+</div>
+</button>
+<!-- Card 3 -->
+<button class="group relative w-full text-left p-4 rounded-xl bg-surface-container-low/80 hover:bg-surface-container/90 active:scale-[0.98] transition-all duration-200 shadow-sm backdrop-blur-xl overflow-hidden cursor-pointer" type="button">
+<div class="absolute inset-0 bg-gradient-to-r from-secondary-container/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+<div class="flex items-start gap-3.5 relative z-10">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high/80 text-secondary-fixed flex items-center justify-center shrink-0 shadow-inner group-hover:bg-secondary-container group-hover:text-on-secondary-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">palette</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between mb-0.5">
+<span class="font-label-meta text-label-meta text-secondary-fixed font-medium">Design Systems</span>
+<span class="material-symbols-outlined text-[16px] text-outline group-hover:text-secondary-fixed transition-transform group-hover:translate-x-0.5">arrow_forward</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-medium line-clamp-2">
+            Create an ethereal glassmorphism Tailwind color palette and tokens
+          </p>
+</div>
+</div>
+</button>
+<!-- Card 4 -->
+<button class="group relative w-full text-left p-4 rounded-xl bg-surface-container-low/80 hover:bg-surface-container/90 active:scale-[0.98] transition-all duration-200 shadow-sm backdrop-blur-xl overflow-hidden cursor-pointer" type="button">
+<div class="absolute inset-0 bg-gradient-to-r from-error/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+<div class="flex items-start gap-3.5 relative z-10">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high/80 text-error flex items-center justify-center shrink-0 shadow-inner group-hover:bg-error-container group-hover:text-on-error-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">bug_report</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between mb-0.5">
+<span class="font-label-meta text-label-meta text-error font-medium">Debugging</span>
+<span class="material-symbols-outlined text-[16px] text-outline group-hover:text-error transition-transform group-hover:translate-x-0.5">arrow_forward</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-medium line-clamp-2">
+            Debug an async API edge timeout error in Next.js route handlers
+          </p>
+</div>
+</div>
+</button>
+</div>
+<!-- Trust & System Feature Badges -->
+<div class="mt-auto pt-space-xs flex flex-wrap items-center justify-center gap-2">
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high/50 backdrop-blur-md">
+<span class="material-symbols-outlined text-[15px] text-tertiary">bolt</span>
+<span class="font-label-meta text-label-meta text-on-surface-variant font-medium">Free Tier Enabled</span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high/50 backdrop-blur-md">
+<span class="material-symbols-outlined text-[15px] text-primary">lock</span>
+<span class="font-label-meta text-label-meta text-on-surface-variant font-medium">Zero-Leak Server API</span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high/50 backdrop-blur-md">
+<span class="material-symbols-outlined text-[15px] text-secondary">save</span>
+<span class="font-label-meta text-label-meta text-on-surface-variant font-medium">Auto-saved Locally</span>
+</div>
+</div>
+</div>
+<script>
+  // Connect prompt starter cards to bottom input console automatically
+  document.querySelectorAll('button[type="button"]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const promptText = button.querySelector('p')?.innerText;
+      const shellTextarea = document.querySelector('textarea');
+      if (promptText && shellTextarea) {
+        shellTextarea.value = promptText.trim();
+        shellTextarea.focus();
+        shellTextarea.dispatchEvent(new Event('input', { bubbles: true }));
+      }
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-2xl shadow-[0_-4px_20px_rgba(0,0,0,0.35)]" data-active-classes="text-primary"><div class="p-space-sm px-margin-mobile flex flex-col gap-space-xs"><div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container-low/90 rounded-2xl shadow-inner"><button aria-label="Attach files" class="w-11 h-11 flex items-center justify-center text-outline hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">attach_file</span></button><textarea class="flex-1 bg-transparent border-0 outline-none resize-none font-body-md text-body-md text-on-surface placeholder-outline focus:ring-0 py-2.5 max-h-24" placeholder="Ask Gemini anything..." rows="1"></textarea><button aria-label="Voice Mode" class="w-11 h-11 flex items-center justify-center text-outline hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">mic</span></button><button aria-label="Send prompt" class="w-11 h-11 rounded-full bg-gradient-to-tr from-secondary-container via-primary-container to-tertiary flex items-center justify-center text-on-primary shadow-[0_0_16px_rgba(128,131,255,0.35)] hover:opacity-95 transition-all"><span class="material-symbols-outlined text-[20px] text-on-primary">arrow_upward</span></button></div><div class="flex items-center justify-around h-12 pt-1"><a aria-current="page" class="flex items-center gap-1.5 px-3 py-1 rounded-full transition-colors text-primary" data-path="chat-hub" href="#"><span class="material-symbols-outlined text-[20px]">chat_bubble</span><span class="font-label-meta text-label-meta">Chat</span></a><a class="flex items-center gap-1.5 px-3 py-1 rounded-full text-on-surface-variant hover:text-on-surface transition-colors" data-path="canvas-scratchpad" href="#"><span class="material-symbols-outlined text-[20px]">edit_note</span><span class="font-label-meta text-label-meta">Canvas</span></a><a class="flex items-center gap-1.5 px-3 py-1 rounded-full text-on-surface-variant hover:text-on-surface transition-colors" data-path="gemini-live" href="#"><span class="material-symbols-outlined text-[20px]">graphic_eq</span><span class="font-label-meta text-label-meta">Live</span></a></div></div></nav></body></html>

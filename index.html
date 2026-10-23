@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gemini AI Chat Studio</title>
+    <meta name="description" content="Professional, intelligent AI chatbot powered by Google Gemini 3.8 with real-time streaming, conversation management, and Canvas workspace." />
+    <meta property="og:title" content="Gemini AI Chat Studio" />
+    <meta property="og:description" content="Professional, intelligent AI chatbot powered by Google Gemini 3.8 with real-time streaming, conversation management, and Canvas workspace." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      // Suppress harmless Vite HMR WebSocket warnings when HMR is disabled in preview
+      window.addEventListener('unhandledrejection', function(event) {
+        if (event.reason && (event.reason.message?.includes('WebSocket') || event.reason.toString?.().includes('WebSocket'))) {
+          event.preventDefault();
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
